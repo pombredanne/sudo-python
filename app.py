@@ -1,5 +1,6 @@
 ### FRAMEWORK STUFF ###################################################
 
+
 class Messaging:
     """Class for sending message which allows for loose coupling of
     component in the app.
@@ -86,8 +87,7 @@ class Animator:
         self.loop = loop
 
     def run(self):
-        JS('var delay')
-        JS('var func')
+        var(delay, func)
         delay = self.delay
         func = self.func
         if self.loop:
@@ -96,7 +96,7 @@ class Animator:
             JS('setTimeout(adapt_arguments(func), delay)')
 
     def stop(self):
-        JS('var id')
+        var(id)
         id = self.id
         JS('clearInterval(id)')
 
@@ -150,7 +150,7 @@ class ProgressiveText:
         self.delay = delay
         self.text = text
         self.length = len(text)
-        JS('var element')
+        var(element)
         element = J(selector)
         element.html('')
         for i in text:
@@ -166,17 +166,15 @@ class ProgressiveText:
         if not self.running:
             self.animation.stop()
             return
-        JS('var to_update')
+        var(to_update)
         to_update = False
         for index in range(self.length):
-            JS('var element')
-            JS('var char')
-            JS('var expected')
+            var(element, char, expected)
             element = self.elements.get(index)
             char = element.html()
             expected = self.text.get(index)
             if char != expected:
-                JS('var novo')
+                var(novo)
                 novo = ABC.get(ABC.index(char) + 1)
                 element.html(novo)
                 to_update = True
@@ -215,8 +213,7 @@ class SUDO(Application):
     def __init__(self):
         Application.__init__(self)
 
-        JS('var title')
-        JS('var helpline')
+        var(title, helpline)
 
         ProgressiveText('#title', str('sudo python'), None, 100).start()
         ProgressiveText('#helpline', str('awesomness'), self.start, 200).start()
