@@ -1,4 +1,4 @@
 sudo-python
 ===========
 
-sudo python - that is all
+sudo python - PythonScript experiment
