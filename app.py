@@ -112,35 +112,7 @@ class Application:
 
 ### PROGRESSIVE TEXT ######################################################
 
-ABC = list()
-ABC.append('&nbsp;')
-ABC.append('a')
-ABC.append('b')
-ABC.append('c')
-ABC.append('d')
-ABC.append('e')
-ABC.append('f')
-ABC.append('g')
-ABC.append('h')
-ABC.append('i')
-ABC.append('j')
-ABC.append('k')
-ABC.append('l')
-ABC.append('m')
-ABC.append('n')
-ABC.append('o')
-ABC.append('p')
-ABC.append('q')
-ABC.append('r')
-ABC.append('s')
-ABC.append('t')
-ABC.append('u')
-ABC.append('v')
-ABC.append('w')
-ABC.append('x')
-ABC.append('y')
-ABC.append('z')
-ABC.append(' ')
+ABC = str('azertyuiopQSDFGHJKLMwxcvbnAZERTYUIOPqsdfghjklmWXCVBN  ')
 
 
 class ProgressiveText:
@@ -154,7 +126,7 @@ class ProgressiveText:
         element = J(selector)
         element.html('')
         for i in text:
-            element.append('<span>&nbsp;</span>')
+            element.append('<span>a</span>')
         self.elements = J(selector + ' span')
 
     def start(self):
@@ -216,12 +188,22 @@ class SUDO(Application):
         var(title, helpline)
 
         ProgressiveText('#title', str('sudo python'), None, 100).start()
-        ProgressiveText('#helpline', str('awesomness'), self.start, 200).start()
+        ProgressiveText('#helpline', str('awesomeness'), self.start, 200).start()
 
     def start(self):
         var(metaclass)
-        Block(str('metaclass'), str('powerful meta programming mechanic'), 'http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python')
-        Block(str('free books'), str('best free resources'), 'http://pythonbooks.revolunet.com/')
+        Block(str('metaclass'), str('Powerful meta programming mechanic'), 'http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python')
+        Block(str('free books'), str('Best free resources'), 'http://pythonbooks.revolunet.com/')
+        Block(str('deep'), str('dive'), 'http://www.cafepy.com/')
+        Block(str('make'), str('me'), 'http://xkcd.com/149/')
+        Block(str('python'), str('fast implementation in python'), 'http://pypy.org/')
+        Block(str('brython'), str('in the browser by javascript'), 'http://www.brython.info/')
+        Block(str('script'), str('in the browser by Python'), 'http://apppyjs.appspot.com/')
+        Block(str('cloud'), str('operate a private or public cloud'), 'http://www.openstack.org/')
+        Block(str('ZOPE'), str('complex thing should be possible'), 'https://www.zope.com/')
+        Block(str('nerfed'), str('the dos and doings'), 'https://github.com/amirouche/Nerfed')
+        Block(str('blockbuster'), str('primary web solution'), 'https://www.djangoproject.com/')
+        Block(str('lovestory'), str('network (SFW)'), 'https://github.com/organizations/python-graph-lovestory')
         J('#playground').show()
 
 

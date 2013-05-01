@@ -187,8 +187,7 @@ var Animator__run = function(args, kwargs) {
 var signature = {"kwargs": {}, "args": create_array("self")};
 var arguments = get_arguments(signature, args, kwargs);
 var self = arguments["self"];
-var delay;
-var func;
+var delay, func;
 delay = get_attribute(self, "delay");
 func = get_attribute(self, "func");
 if(get_attribute(self, "loop")) {
@@ -225,35 +224,7 @@ get_attribute(get_attribute(get_attribute(self, "messaging"), "subscribe"), "__c
 
 Application.__init__ = Application____init__;
 Application = create_class("Application", parents, Application);
-ABC = get_attribute(list, "__call__")(create_array(), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("&nbsp;"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("a"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("b"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("c"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("d"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("e"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("f"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("g"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("h"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("i"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("j"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("k"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("l"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("m"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("n"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("o"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("p"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("q"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("r"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("s"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("t"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("u"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("v"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("w"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("x"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("y"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array("z"), {});
-get_attribute(get_attribute(ABC, "append"), "__call__")(create_array(" "), {});
+ABC = get_attribute(str, "__call__")(create_array("azertyuiopQSDFGHJKLMwxcvbnAZERTYUIOPqsdfghjklmWXCVBN  "), {});
 ProgressiveText = {};
 parents = create_array();
 var ProgressiveText____init__ = function(args, kwargs) {
@@ -275,7 +246,7 @@ var __iterator__ = get_attribute(text, "__iter__")(create_array(), {});
 try {
 var i = get_attribute(__iterator__, "next")(create_array(), {});
 while(true) {
-get_attribute(get_attribute(element, "append"), "__call__")(create_array("<span>&nbsp;</span>"), {});
+get_attribute(get_attribute(element, "append"), "__call__")(create_array("<span>a</span>"), {});
 var i = get_attribute(__iterator__, "next")(create_array(), {});
 }
 }
@@ -315,9 +286,7 @@ var __iterator__ = get_attribute(get_attribute(range, "__call__")(create_array(g
 try {
 var index = get_attribute(__iterator__, "next")(create_array(), {});
 while(true) {
-var element;
-var char;
-var expected;
+var element, char, expected;
 element = get_attribute(get_attribute(get_attribute(self, "elements"), "get"), "__call__")(create_array(index), {});
 char = get_attribute(get_attribute(element, "html"), "__call__")(create_array(), {});
 expected = get_attribute(get_attribute(get_attribute(self, "text"), "get"), "__call__")(create_array(index), {});
@@ -395,10 +364,9 @@ var signature = {"kwargs": {}, "args": create_array("self")};
 var arguments = get_arguments(signature, args, kwargs);
 var self = arguments["self"];
 get_attribute(get_attribute(Application, "__init__"), "__call__")(create_array(self), {});
-var title;
-var helpline;
+var title, helpline;
 get_attribute(get_attribute(get_attribute(ProgressiveText, "__call__")(create_array("#title", get_attribute(str, "__call__")(create_array("sudo python"), {}), undefined, 100), {}), "start"), "__call__")(create_array(), {});
-get_attribute(get_attribute(get_attribute(ProgressiveText, "__call__")(create_array("#helpline", get_attribute(str, "__call__")(create_array("awesomness"), {}), get_attribute(self, "start"), 200), {}), "start"), "__call__")(create_array(), {});
+get_attribute(get_attribute(get_attribute(ProgressiveText, "__call__")(create_array("#helpline", get_attribute(str, "__call__")(create_array("awesomeness"), {}), get_attribute(self, "start"), 200), {}), "start"), "__call__")(create_array(), {});
 }
 
 SUDO.__init__ = SUDO____init__;
@@ -407,8 +375,18 @@ var signature = {"kwargs": {}, "args": create_array("self")};
 var arguments = get_arguments(signature, args, kwargs);
 var self = arguments["self"];
 var metaclass;
-get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("metaclass"), {}), get_attribute(str, "__call__")(create_array("powerful meta programming mechanic"), {}), "http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python"), {});
-get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("free books"), {}), get_attribute(str, "__call__")(create_array("best free resources"), {}), "http://pythonbooks.revolunet.com/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("metaclass"), {}), get_attribute(str, "__call__")(create_array("Powerful meta programming mechanic"), {}), "http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("free books"), {}), get_attribute(str, "__call__")(create_array("Best free resources"), {}), "http://pythonbooks.revolunet.com/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("deep"), {}), get_attribute(str, "__call__")(create_array("dive"), {}), "http://www.cafepy.com/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("make"), {}), get_attribute(str, "__call__")(create_array("me"), {}), "http://xkcd.com/149/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("python"), {}), get_attribute(str, "__call__")(create_array("fast implementation in python"), {}), "http://pypy.org/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("brython"), {}), get_attribute(str, "__call__")(create_array("in the browser by javascript"), {}), "http://www.brython.info/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("script"), {}), get_attribute(str, "__call__")(create_array("in the browser by Python"), {}), "http://apppyjs.appspot.com/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("cloud"), {}), get_attribute(str, "__call__")(create_array("operate a private or public cloud"), {}), "http://www.openstack.org/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("ZOPE"), {}), get_attribute(str, "__call__")(create_array("complex thing should be possible"), {}), "https://www.zope.com/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("nerfed"), {}), get_attribute(str, "__call__")(create_array("the dos and doings"), {}), "https://github.com/amirouche/Nerfed"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("blockbuster"), {}), get_attribute(str, "__call__")(create_array("primary web solution"), {}), "https://www.djangoproject.com/"), {});
+get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("lovestory"), {}), get_attribute(str, "__call__")(create_array("network (SFW)"), {}), "https://github.com/organizations/python-graph-lovestory"), {});
 get_attribute(get_attribute(get_attribute(J, "__call__")(create_array("#playground"), {}), "show"), "__call__")(create_array(), {});
 }
 
