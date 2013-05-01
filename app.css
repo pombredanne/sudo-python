@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'League Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(leaguegothic-regular-webfont.ttf);
+}
+
+body {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'League Gothic', Impact, sans;
+    font-weight: normal;
+    color: white;
+    margin: 0px;
+}
+
+welcome {
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    text-align: center;
+}
+
+#playground {
+    display: none;
+}
+
+#playground div {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    margin: 5px;
+}
+
+#playground div:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
