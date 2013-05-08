@@ -185,8 +185,6 @@ class SUDO(Application):
     def __init__(self):
         Application.__init__(self)
 
-        var(title, helpline)
-
         ProgressiveText('#title', str('sudo python'), None, 100).start()
         ProgressiveText('#helpline', str('awesomeness'), self.start, 200).start()
 
@@ -195,7 +193,7 @@ class SUDO(Application):
         Block(str('metaclass'), str('Powerful meta programming mechanic'), 'http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python')
         Block(str('free books'), str('Best free resources'), 'http://pythonbooks.revolunet.com/')
         Block(str('deep'), str('dive'), 'http://www.cafepy.com/')
-        Block(str('make'), str('me'), 'http://xkcd.com/149/')
+        Block(str('make'), str('it yourself'), 'http://xkcd.com/149/')
         Block(str('python'), str('fast implementation in python'), 'http://pypy.org/')
         Block(str('brython'), str('in the browser by javascript'), 'http://www.brython.info/')
         Block(str('script'), str('in the browser by Python'), 'http://apppyjs.appspot.com/')
@@ -204,7 +202,7 @@ class SUDO(Application):
         Block(str('nerfed'), str('the dos and doings'), 'https://github.com/amirouche/Nerfed')
         Block(str('blockbuster'), str('primary web solution'), 'https://www.djangoproject.com/')
         Block(str('lovestory'), str('network (SFW)'), 'https://github.com/organizations/python-graph-lovestory')
-        J('#playground').show()
+        J('#playground').fade_in()
 
 
 sudo = SUDO()

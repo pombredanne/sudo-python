@@ -387,7 +387,7 @@ get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(cre
 get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("nerfed"), {}), get_attribute(str, "__call__")(create_array("the dos and doings"), {}), "https://github.com/amirouche/Nerfed"), {});
 get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("blockbuster"), {}), get_attribute(str, "__call__")(create_array("primary web solution"), {}), "https://www.djangoproject.com/"), {});
 get_attribute(Block, "__call__")(create_array(get_attribute(str, "__call__")(create_array("lovestory"), {}), get_attribute(str, "__call__")(create_array("network (SFW)"), {}), "https://github.com/organizations/python-graph-lovestory"), {});
-get_attribute(get_attribute(get_attribute(J, "__call__")(create_array("#playground"), {}), "show"), "__call__")(create_array(), {});
+get_attribute(get_attribute(get_attribute(J, "__call__")(create_array("#playground"), {}), "fade_in"), "__call__")(create_array(), {});
 }
 
 SUDO.start = SUDO__start;
