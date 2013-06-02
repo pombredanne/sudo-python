@@ -25,6 +25,7 @@ var self = arguments['self'];
 var sender = arguments['sender'];
 var channel = arguments['channel'];
 var param = arguments['param'];
+console.log("publish", sender, channel, param);
 var __iterator__, receiver;
 __iterator__ = get_attribute(get_attribute(get_attribute(self, "omni"), "__iter__"), "__call__")(create_array(), {});
 try {
@@ -34,7 +35,6 @@ var __args_2, __kwargs_2;
 __args_2 = create_array(sender, channel, param);
 __kwargs_2 = {};
 get_attribute(receiver, "__call__")(__args_2, __kwargs_2);
-undefined;
 receiver = get_attribute(__iterator__, "next")(create_array(), {});
 }
 }
@@ -63,7 +63,6 @@ var __args_5, __kwargs_5;
 __args_5 = create_array(sender, channel, param);
 __kwargs_5 = {};
 get_attribute(receiver, "__call__")(__args_5, __kwargs_5);
-undefined;
 receiver = get_attribute(__iterator__, "next")(create_array(), {});
 }
 }
@@ -86,6 +85,7 @@ arguments = get_arguments(signature, args, kwargs);
 var self = arguments['self'];
 var receiver = arguments['receiver'];
 var channel = arguments['channel'];
+console.log("subscribe", channel);
 if(!channel) {
 var __args_6, __kwargs_6;
 __args_6 = create_array(receiver);
@@ -164,6 +164,7 @@ var next = arguments['next'];
 var sender = arguments['sender'];
 var message = arguments['message'];
 var param = arguments['param'];
+console.log("on_leave empty", next, sender, message, param);
 }
 
 __Node_attrs.on_leave = __Node_on_leave;
@@ -176,6 +177,7 @@ var before = arguments['before'];
 var sender = arguments['sender'];
 var message = arguments['message'];
 var param = arguments['param'];
+console.log("on_enter empty", before, sender, message, param);
 }
 
 __Node_attrs.on_enter = __Node_on_enter;
@@ -202,6 +204,7 @@ var self = arguments['self'];
 var sender = arguments['sender'];
 var message = arguments['message'];
 var param = arguments['param'];
+console.log("handle", sender, message, param);
 var __args_14, __kwargs_14;
 __args_14 = create_array(message);
 __kwargs_14 = {};
@@ -346,7 +349,6 @@ var __args_25, __kwargs_25;
 __args_25 = create_array("<span>a</span>");
 __kwargs_25 = {};
 get_attribute(get_attribute(element, "append"), "__call__")(__args_25, __kwargs_25);
-undefined;
 i = get_attribute(__iterator__, "next")(create_array(), {});
 }
 }
@@ -433,11 +435,6 @@ get_attribute(get_attribute(element, "html"), "__call__")(__args_36, __kwargs_36
 to_update = true;
 }
 
-undefined;
-undefined;
-undefined;
-undefined;
-undefined;
 index = get_attribute(__iterator__, "next")(create_array(), {});
 }
 }

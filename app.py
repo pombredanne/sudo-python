@@ -189,7 +189,6 @@ class SUDO(Application):
         ProgressiveText('#helpline', str('awesomeness'), self.start, 200).start()
 
     def start(self):
-        var(metaclass)
         Block(str('metaclass'), str('Powerful meta programming mechanic'), 'http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python')
         Block(str('free books'), str('Best free resources'), 'http://pythonbooks.revolunet.com/')
         Block(str('deep'), str('dive'), 'http://www.cafepy.com/')
