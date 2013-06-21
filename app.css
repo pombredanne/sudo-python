@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5 {
     background-color: rgba(255, 255, 255, 0.3);
     display: inline-block;
     margin: 5px;
+    cursor:  pointer;
 }
 
 #playground div:hover {
